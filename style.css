@@ -28,14 +28,14 @@ h1 {
 .leftnav {
     background-color: #333; /* Background color for the left navigation */
     width: 250px; /* Set the width of the leftnav */
-    padding: 20px;
-    text-align: left;
+    padding: 50px;
+    text-align: justified;
 }
 
 .leftnav a {
     display: block;
     margin-bottom: 20px; /* Increase spacing between links */
-    padding: 10px;
+    padding: 30px;
     text-decoration: none;
     color: #fff; /* Font color for the links */
     transition: background-color 0.3s ease, color 0.3s ease;
