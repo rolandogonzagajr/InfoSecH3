@@ -1,5 +1,4 @@
 body {
-    background-image: url('Cleaninglady.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -17,8 +16,9 @@ body {
     width: 250px; /* Increase the width to make it bigger */
     height: 100vh; /* Take up the full viewport height */
     position: fixed;
-    top: 0;
+    top: 50%; /* Anchor to the middle of the page vertically */
     left: 0;
+    transform: translateY(-50%); /* Adjust for vertical alignment */
     overflow-y: auto; /* Add scrolling if the content overflows */
 }
 
