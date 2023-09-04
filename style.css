@@ -18,7 +18,9 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    flex: 1; /* Expand to fill available vertical space */
+    align-items: center; /* Center horizontally within the container */
+    justify-content: center; /* Center vertically within the container */
+    height: 100vh; /* Set container height to match viewport height */
 }
 
 .leftnav {
@@ -29,7 +31,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distribute space evenly, pushing content to the bottom */
-    min-height: 100vh; /* Extend leftnav to the bottom of the screen */
+    min-height: 100%; /* Extend leftnav to the bottom of the container */
 }
 
 .leftnav a {
