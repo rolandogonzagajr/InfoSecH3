@@ -36,7 +36,6 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     padding: 10px;
     text-align: justify; /* Justify the text in navigation links */
-    flex-grow: 1; /* Allow navigation links to fill available vertical space */
 }
 
 .leftnav a:hover {
