@@ -6,22 +6,29 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333; /* Font color for the entire page */
+    background-color: #f0f0f0; /* Background color for the entire page */
 }
 
 .leftnav {
-    background-color: #f2f2f2;
+    background-color: #333; /* Background color for the left navigation */
     padding: 20px;
-    width: 200px;
+    width: 250px; /* Increase the width to make it bigger */
+    height: 100vh; /* Take up the full viewport height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Add scrolling if the content overflows */
 }
 
 .leftnav a {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Increase spacing between links */
     padding: 10px;
     text-align: left;
     text-decoration: none;
-    color: #333;
+    color: #fff; /* Font color for the links */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -31,7 +38,7 @@ body {
 }
 
 .wrapper {
-    margin-left: 220px; /* Adjust this value to make room for the leftnav */
+    margin-left: 250px; /* Adjust this value to make room for the leftnav */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
 }
@@ -39,4 +46,6 @@ body {
 h1 {
     color: #333;
     text-align: center;
+    font-size: 36px; /* Increase the font size */
+    margin-bottom: 20px; /* Increase spacing below the h1 */
 }
