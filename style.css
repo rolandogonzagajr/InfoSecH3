@@ -19,6 +19,12 @@ body {
     justify-content: flex-start; /* Align elements at the top */
 }
 
+h1 {
+    color: #333;
+    font-size: 36px; /* Increase the font size */
+    margin-top: 20px; /* Increase spacing above the h1 */
+}
+
 .leftnav {
     background-color: #333; /* Background color for the left navigation */
     width: 250px; /* Set the width of the leftnav */
@@ -38,10 +44,4 @@ body {
 .leftnav a:hover {
     background-color: #04AA6D;
     color: white;
-}
-
-h1 {
-    color: #333;
-    font-size: 36px; /* Increase the font size */
-    margin-top: 20px; /* Increase spacing above the h1 */
 }
