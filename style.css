@@ -9,20 +9,13 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333; /* Font color for the entire page */
     background-color: #f0f0f0; /* Background color for the entire page */
-}
-
-.container {
     display: flex;
-    height: 100vh; /* Take up the full viewport height */
 }
 
 .leftnav {
     background-color: #333; /* Background color for the left navigation */
     width: 250px; /* Increase the width to make it bigger */
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center vertically */
 }
 
 .leftnav a {
@@ -41,7 +34,7 @@ body {
 }
 
 .wrapper {
-    margin-left: 250px; /* Adjust this value to make room for the leftnav */
+    flex: 1; /* Expand and take the remaining width */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
 }
