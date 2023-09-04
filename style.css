@@ -9,39 +9,43 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333; /* Font color for the entire page */
     background-color: #f0f0f0; /* Background color for the entire page */
+    display: flex;
+    min-height: 100vh; /* Ensure a minimum height of the viewport */
 }
 
 .container {
     display: flex;
-    height: 100vh; /* Take up the full viewport height */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: flex-start; /* Align elements at the top */
-}
-
-h1 {
-    color: #333;
-    font-size: 36px; /* Increase the font size */
-    margin-top: 20px; /* Increase spacing above the h1 */
+    flex-direction: column;
+    flex: 1; /* Expand to fill available vertical space */
 }
 
 .leftnav {
     background-color: #333; /* Background color for the left navigation */
     width: 250px; /* Set the width of the leftnav */
-    padding: 50px;
-    text-align: justified;
+    padding: 20px;
+    text-align: justify; /* Justify the text in navigation links */
+    color: #fff; /* Font color for the links */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
 }
 
 .leftnav a {
-    display: block;
-    margin-bottom: 20px; /* Increase spacing between links */
-    padding: 30px;
+    flex-grow: 1; /* Allow navigation links to fill available space */
     text-decoration: none;
-    color: #fff; /* Font color for the links */
+    color: inherit; /* Use the inherited font color */
     transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px;
 }
 
 .leftnav a:hover {
     background-color: #04AA6D;
-    color: white;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
