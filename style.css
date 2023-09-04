@@ -11,6 +11,8 @@ body {
     background-color: #f0f0f0; /* Background color for the entire page */
     display: flex;
     min-height: 100vh; /* Ensure a minimum height of the viewport */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
 }
 
 .container {
@@ -27,7 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distribute space evenly, pushing content to the bottom */
-    min-height: 100%; /* Extend leftnav to the bottom */
+    min-height: 100vh; /* Extend leftnav to the bottom of the screen */
 }
 
 .leftnav a {
@@ -36,6 +38,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     padding: 10px;
     text-align: justify; /* Justify the text in navigation links */
+    flex-grow: 1; /* Allow navigation links to fill available vertical space */
 }
 
 .leftnav a:hover {
