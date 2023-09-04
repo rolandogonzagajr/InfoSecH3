@@ -1,67 +1,67 @@
 body {
-  background-image: url('Cleaninglady.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
- 
+    background-image: url('Cleaninglady.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .topnav {
-  background-color: #333;
-  overflow: hidden;
+    background-color: #f2f2f2;
+    overflow: hidden;
 }
 
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #04AA6D;
+    color: white;
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+    background-color: #04AA6D;
+    color: white;
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+.leftnav {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 200px;
 }
 
-.grid-container > div {
-  background-color: yellow;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 30px;
+.leftnav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-  
+
+.leftnav a:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.wrapper {
+    margin-left: 220px; /* Adjust this value to make room for the leftnav */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+}
 
 h1 {
-    color: red;
+    color: #333;
     text-align: center;
-}
-
-h2 {
-text-align: right;
-  color: red;
 }
