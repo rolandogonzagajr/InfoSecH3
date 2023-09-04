@@ -23,7 +23,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center vertically */
-    align-items: flex-start; /* Align to the top horizontally */
 }
 
 .leftnav a {
