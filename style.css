@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distribute space evenly, pushing content to the bottom */
-    text-align: justify; /* Justify the text in navigation links */
+    min-height: 100%; /* Extend leftnav to the bottom */
 }
 
 .leftnav a {
@@ -35,6 +35,7 @@ body {
     color: inherit; /* Use the inherited font color */
     transition: background-color 0.3s ease, color 0.3s ease;
     padding: 10px;
+    text-align: justify; /* Justify the text in navigation links */
 }
 
 .leftnav a:hover {
