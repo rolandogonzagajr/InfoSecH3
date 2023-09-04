@@ -1,4 +1,5 @@
 body {
+    background-image: url('Cleaninglady.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -10,16 +11,19 @@ body {
     background-color: #f0f0f0; /* Background color for the entire page */
 }
 
+.container {
+    display: flex;
+    height: 100vh; /* Take up the full viewport height */
+}
+
 .leftnav {
     background-color: #333; /* Background color for the left navigation */
-    padding: 20px;
     width: 250px; /* Increase the width to make it bigger */
-    height: 100vh; /* Take up the full viewport height */
-    position: fixed;
-    top: 50%; /* Anchor to the middle of the page vertically */
-    left: 0;
-    transform: translateY(-50%); /* Adjust for vertical alignment */
-    overflow-y: auto; /* Add scrolling if the content overflows */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: flex-start; /* Align to the top horizontally */
 }
 
 .leftnav a {
