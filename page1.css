@@ -21,8 +21,9 @@ body {
     align-items: center; /* Center horizontally within the container */
     justify-content: space-between; /* Add space between h1 and leftnav */
     height: 100vh;
-    padding-right: 40px;
+    padding: 0 40px; /* Add padding to both sides to create space */
 }
+
 
 h1 {
     color: #333;
