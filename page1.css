@@ -11,17 +11,15 @@ body {
     display: flex;
     min-height: 100vh; /* Ensure a minimum height of the viewport */
     align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    justify-content: flex-start; /* Align content to the left */
 }
 
 .container {
     display: flex;
     flex-direction: row; /* Change flex direction to horizontal */
     align-items: center; /* Center horizontally within the container */
-    justify-content: space-between; /* Add space between leftnav and content */
     height: 100vh; /* Set container height to match viewport height */
     padding-left: 40px; /* Add padding to the left side of the container */
-    padding-right: 40px; /* Add padding to the right side of the container */
 }
 
 h1 {
@@ -38,12 +36,8 @@ h1 {
     color: #fff; /* Font color for the links */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribute space evenly, pushing content to the bottom */
+    justify-content: flex-start; /* Align navigation links to the top */
     min-height: 100%; /* Extend leftnav to the bottom of the container */
-}
-
-.content {
-    flex-grow: 1; /* Allow content to fill available horizontal space */
 }
 
 /* Rest of your CSS styles */
