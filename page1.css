@@ -1,6 +1,8 @@
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
 }
 
 .leftnav {
@@ -12,6 +14,7 @@
 }
 
 .content {
-    flex-grow: 1; /* Allow content to fill the remaining space */
+    flex-grow: 1;
     padding: 20px;
+    margin-left: 100px; /* Add a margin to separate content from the left navigation */
 }
