@@ -1,17 +1,29 @@
 .container {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
+    height: 100vh;
+    padding: 0 40px;
 }
 
 .leftnav {
     background-color: #333;
-    width: 250px; /* Adjust the width as needed */
+    width: auto;
+    min-width: 250px;
     padding: 20px;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .content {
-    flex-grow: 1; /* Allow content to fill the remaining space */
     padding: 20px;
+    margin-left: 270px; /* Adjust the margin as needed to create space */
 }
