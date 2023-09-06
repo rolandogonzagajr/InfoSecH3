@@ -1,0 +1,8 @@
+/* page1.css */
+.container {
+    justify-content: space-between;
+}
+
+.leftnav {
+    order: -1; /* Move the navigation to the start (left) */
+}
