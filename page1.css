@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: row; /* Change flex direction to horizontal */
     align-items: center; /* Center horizontally within the container */
-    justify-content: space-between; /* Add space between h1 and leftnav */
+    justify-content: space-between; /* Add space between leftnav and content */
     height: 100vh; /* Set container height to match viewport height */
     padding-left: 40px; /* Add padding to the left side of the container */
     padding-right: 40px; /* Add padding to the right side of the container */
@@ -42,6 +42,10 @@ h1 {
     min-height: 100%; /* Extend leftnav to the bottom of the container */
 }
 
+.content {
+    flex-grow: 1; /* Allow content to fill available horizontal space */
+}
+
 /* Rest of your CSS styles */
 
 .leftnav a {
@@ -50,7 +54,6 @@ h1 {
     transition: background-color 0.3s ease, color 0.3s ease;
     padding: 10px;
     text-align: justify; /* Justify the text in navigation links */
-    flex-grow: 1; /* Allow navigation links to fill available vertical space */
 }
 
 .leftnav a:hover {
