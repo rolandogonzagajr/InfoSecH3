@@ -27,8 +27,9 @@
 
 .content {
     padding: 20px;
-    margin-left: 270px; /* Adjust the margin as needed to create space */
+    margin-left: 400px; /* Adjust this value to increase spacing */
 }
+
 
 /* Rest of your CSS styles */
 
