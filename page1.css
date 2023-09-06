@@ -53,9 +53,10 @@
     height: 100vh;
     padding: 0 40px; /* Add padding to both sides to create space */
 }
+
 .content {
     padding: 20px;
-    margin-left: 270px; /* Adjust the margin as needed to create space */
+  padding-left: 280px; /* Adjust this value to create the desired spacing */
 }
 
 h1 {
