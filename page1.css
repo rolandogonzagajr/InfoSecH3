@@ -31,7 +31,6 @@ h1 {
     margin: 0;
 }
 
-/* Add this CSS to your style.css file */
 .leftnav {
     background-color: #333;
     width: auto;
@@ -44,16 +43,11 @@ h1 {
     min-height: 100vh;
     position: fixed;
     left: 0;
-    top: 0;
-    bottom: 0;
-    overflow-y: auto; /* Allow vertical scrolling if needed */
+    top: 0; /* Stick it to the top */
+    bottom: 0; /* Extend it to the bottom */
 }
 
-.content {
-    margin-left: 270px; /* Adjust this margin to leave space for the fixed sidebar */
-    padding: 20px;
-}
-
+/* Rest of your CSS styles */
 
 .leftnav a {
     text-decoration: none;
