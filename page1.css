@@ -24,11 +24,12 @@
     height: 100vh;
     padding: 0 40px; /* Add padding to both sides to create space */
 }
-
 .content {
     padding: 20px;
- padding-left: 280px; /* Adjust this value to create the desired spacing */
+    margin-left: calc(250px + 50px); /* Adjust the 20px to control the spacing */
 }
+
+
 
 
 /* Rest of your CSS styles */
