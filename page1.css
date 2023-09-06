@@ -1,9 +1,38 @@
-body {
+
+  body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    margin: 20;
+    margin: 0; /* Updated to remove margin */
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Change flex direction to horizontal */
+    align-items: center; /* Center horizontally within the container */
+    justify-content: space-between; /* Add space between h1 and leftnav */
+    height: 100vh;
+    padding: 0 40px; /* Add padding to both sides to create space */
+}
+
+.content {
+    padding: 20px;
+    margin-left: 270px; /* Adjust the margin as needed to create space */
+}
+
+/* Rest of your CSS styles */
+
+;
     padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
