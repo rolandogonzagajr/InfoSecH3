@@ -23,7 +23,9 @@ body {
     height: 100vh;
     padding: 0 40px; /* Add padding to both sides to create space */
 }
-
+.content {
+    padding: 20px; /* Add padding to the content to create space */
+}
 
 h1 {
     color: #333;
