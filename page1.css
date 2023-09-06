@@ -24,7 +24,8 @@ body {
     padding: 0 40px; /* Add padding to both sides to create space */
 }
 .content {
-    padding: 20px; /* Add padding to the content to create space */
+    padding: 20px;
+    margin-left: 270px; /* Adjust the margin as needed to create space */
 }
 
 h1 {
