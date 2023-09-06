@@ -16,15 +16,22 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Change flex direction to horizontal */
     align-items: center; /* Center horizontally within the container */
     justify-content: center; /* Center vertically within the container */
     height: 100vh; /* Set container height to match viewport height */
 }
 
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-right: 20px; /* Add right margin to create space between h1 and leftnav */
+}
+
 .leftnav {
     background-color: #333; /* Background color for the left navigation */
-    width: 250px; /* Set the width of the leftnav */
+    width: auto; /* Remove the fixed width to allow it to expand horizontally */
+    min-width: 250px; /* Set a minimum width if needed */
     padding: 20px;
     color: #fff; /* Font color for the links */
     display: flex;
@@ -45,5 +52,3 @@ body {
 .leftnav a:hover {
     background-color: #04AA6D;
 }
-
-
