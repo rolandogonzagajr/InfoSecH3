@@ -15,13 +15,14 @@ body {
     overflow-x: hidden; /* Hide horizontal overflow */
 }
 
+
 .container {
     display: flex;
     flex-direction: row; /* Change flex direction to horizontal */
     align-items: center; /* Center horizontally within the container */
     justify-content: space-between; /* Add space between h1 and leftnav */
-    height: 100vh; /* Set container height to match viewport height */
-    padding-right: 40px; /* Add padding to the right side of the container */
+    height: 100vh;
+    padding: 0 40px; /* Add padding to both sides to create space */
 }
 
 h1 {
