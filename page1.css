@@ -46,6 +46,11 @@ h1 {
     left: 0; /* Stick it to the left side */
 }
 
+.content {
+    position: relative; /* Make content relative to the parent container */
+    margin-left: 200px; /* Add some space between the left nav and the content */
+}
+
 /* Rest of your CSS styles */
 
 .leftnav a {
