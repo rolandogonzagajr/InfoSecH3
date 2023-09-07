@@ -3,70 +3,31 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    margin: 0;
+    margin: 0; /* Updated to remove margin */
     padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333; /* Font color for the entire page */
-    background-color: #f0f0f0; /* Background color for the entire page */
+    color: #333;
+    background-color: #f0f0f0;
     display: flex;
-    min-height: 100vh; /* Ensure a minimum height of the viewport */
-    align-items: center; /* Center vertically */
+    min-height: 100vh;
+    align-items: center;
     justify-content: flex-start; /* Align content to the left */
     overflow-x: hidden; /* Hide horizontal overflow */
 }
 
-
-
-h1 {
-    color: #333;
-    font-size: 40px;
-    line-height: 1.2; /* Adjust line height to control the spacing between lines */
-    margin: 0; /* Remove margin to the left of h1 */
-}
-
-
-
-
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align items to the top of the container */
-    padding: 20px; /* Add padding around the container */
+    flex-direction: row; /* Change flex direction to horizontal */
+    align-items: center; /* Center horizontally within the container */
+    justify-content: space-between; /* Add space between h1 and leftnav */
+    height: 100vh;
+    padding: 0 40px; /* Add padding to both sides to create space */
 }
-
-
 
 .content {
-    margin-left: 20px; /* Add a margin to the left of the content */
-    flex-grow: 1;
-    padding: 20px; /* Add padding inside the content */
-}
-
-
-.leftnav {
-    background-color: #333; /* Background color for the left navigation */
-    width: auto; /* Remove the fixed width to allow it to expand horizontally */
-    min-width: 250px; /* Set a minimum width if needed */
     padding: 20px;
-    color: #fff; /* Font color for the links */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribute space evenly, pushing content to the bottom */
-    min-height: 100%; /* Extend leftnav to the bottom of the container */
+    margin-left: 270px; /* Adjust the margin as needed to create space */
 }
 
 /* Rest of your CSS styles */
 
-
-.leftnav a {
-    text-decoration: none;
-    color: inherit; /* Use the inherited font color */
-    transition: background-color 0.3s ease, color 0.3s ease;
-    padding: 10px;
-    text-align: justify; /* Justify the text in navigation links */
-    flex-grow: 1; /* Allow navigation links to fill available vertical space */
-}
-
-.leftnav a:hover {
-    background-color: #04AA6D;
-}
