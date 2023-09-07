@@ -30,6 +30,10 @@ h1 {
     line-height: 1.2;
     margin: 0;
 }
+.content {
+    padding: 20px;
+    margin-left: 300px; /* Adjust this value to increase spacing */
+}
 
 .leftnav {
     background-color: #333;
