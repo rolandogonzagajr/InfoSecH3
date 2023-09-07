@@ -3,7 +3,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    margin: 0; /* Updated to remove margin */
+    margin: 0;
     padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
@@ -21,13 +21,43 @@ body {
     align-items: center; /* Center horizontally within the container */
     justify-content: space-between; /* Add space between h1 and leftnav */
     height: 100vh;
-    padding: 0 40px; /* Add padding to both sides to create space */
+    padding-right: 40px;
 }
 
-.content {
+h1 {
+    color: #333;
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.leftnav {
+    background-color: #333;
+    width: auto;
+    min-width: 250px;
     padding: 20px;
-    margin-left: 270px; /* Adjust the margin as needed to create space */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0; /* Stick it to the top */
+    bottom: 0; /* Extend it to the bottom */
 }
 
 /* Rest of your CSS styles */
 
+.leftnav a {
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px;
+    text-align: justify;
+    flex-grow: 1;
+}
+
+.leftnav a:hover {
+    background-color: #04AA6D;
+}
