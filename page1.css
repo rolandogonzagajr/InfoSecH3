@@ -16,14 +16,6 @@ body {
 }
 
 
-.container {
-    display: flex;
-    flex-direction: row; /* Change flex direction to horizontal */
-    align-items: center; /* Center horizontally within the container */
-    justify-content: space-between; /* Add space between h1 and leftnav */
-    height: 100vh;
-    padding: 0 40px; /* Add padding to both sides to create space */
-}
 
 h1 {
     color: #333;
@@ -32,24 +24,30 @@ h1 {
     margin: 0; /* Remove margin to the left of h1 */
 }
 
-.leftnav {
-    background-color: #333; /* Background color for the left navigation */
-    width: auto; /* Remove the fixed width to allow it to expand horizontally */
-    min-width: 250px; /* Set a minimum width if needed */
-    padding: 20px;
-    color: #fff; /* Font color for the links */
+
+
+
+.container {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align navigation to the top */
-    min-height: 100vh; /* Extend leftnav to the full height of the viewport */
-    position: fixed; /* Make leftnav fixed */
-    left: 0; /* Stick it to the left side */
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top of the container */
+    padding: 20px; /* Add padding around the container */
+}
+
+.leftnav {
+    background-color: #333;
+    width: 250px; /* Adjust the width as needed */
+    padding: 20px;
+    color: #fff;
+    min-height: 100vh;
 }
 
 .content {
-    position: relative; /* Make content relative to the parent container */
-    margin-left: 200px; /* Add some space between the left nav and the content */
+    margin-left: 20px; /* Add a margin to the left of the content */
+    flex-grow: 1;
+    padding: 20px; /* Add padding inside the content */
 }
+
 
 /* Rest of your CSS styles */
 
