@@ -77,6 +77,74 @@
                 <p>Develops strategies to mitigate threats, ensuring security controls are proportionate to the level of risk.</p>
 
             <h1 class="content">OWASP CheatSheets Series Team 2021:<br>Threat Modeling Cheat Sheet </h1>
+                <h1><b>Threat Modeling Terminology</b></h1>
+    <ul>
+        <li>Threat modeling: A process of identifying, analyzing, and mitigating threats to a system.</li>
+        <li>Threat: A potential attack on a system.</li>
+        <li>Asset: Something of value that needs to be protected, such as data, systems, or people.</li>
+        <li>Threat agent: An entity that can carry out a threat, such as an attacker, a natural disaster, or a system failure.</li>
+        <li>Mitigation: An action taken to reduce the likelihood or impact of a threat.</li>
+        <li>Risk: The likelihood of a threat being successful and the impact of that success.</li>
+    </ul>
+
+    <h1>Getting Started</h1>
+    <ol>
+        <li>Define the business objectives of the system. This will help you to identify the assets that need to be protected and the threats that are most likely to impact those assets.</li>
+        <li>Identify the application design. This will help you to understand how the system works and identify the potential vulnerabilities that could be exploited by attackers.</li>
+        <li>Create design documents. These documents will help you to communicate the threat modeling results to other stakeholders.</li>
+    </ol>
+
+    <h1>Decompose and Model the System</h1>
+    <ol>
+        <li>Define and evaluate the assets of the system. This includes data in transit and data at rest.</li>
+        <li>Create an information flow diagram (DFD) of the system. This diagram will help you to visualize the flow of data through the system and identify the potential points of attack.</li>
+        <li>Whiteboard the architecture of the system and present the DFD in the context of MVC. This will help you to understand the different components of the system and how they interact with each other.</li>
+        <li>Use tools to draw the DFD, such as OWASP Threat Dragon, Poirot, MS TMT, or OWASP pytm. These tools can help you to create a more detailed and accurate DFD.</li>
+        <li>Define the data flow over the DFD. This will help you to identify the assets that are exposed to the most risk.</li>
+        <li>Define the trust boundaries in the system. This will help you to identify the points where an attacker could gain access to sensitive data.</li>
+        <li>Define the user roles and trust levels in the system. This will help you to identify the users who have access to sensitive data and the actions that they are authorized to perform.</li>
+        <li>Highlight the authorization per user role over the DFD. This will help you to identify the users who have access to sensitive data and the actions that they are authorized to perform.</li>
+        <li>Define the application entry points. This will help you to identify the ways in which an attacker could gain access to the system.</li>
+    </ol>
+
+    <h1>Identify Threat Agents</h1>
+    <ol>
+        <li>Identify all possible threat agents. This includes attackers, natural disasters, and system failures.</li>
+    </ol>
+
+    <h1>Define All Possible Threats</h1>
+    <ol>
+        <li>Define all possible threats to the system, based on the assets, threat agents, and trust boundaries. This will help you to identify the most critical threats that need to be mitigated.</li>
+    </ol>
+
+    <h1>Map Threat Agents to Application Entry Points</h1>
+    <ol>
+        <li>Map the threat agents to the application entry points. This will help you to identify the specific threats that are most likely to impact each entry point.</li>
+        <li>Draw attack vectors and attack trees. This will help you to visualize the steps that an attacker would need to take to exploit a vulnerability.</li>
+        <li>Map abuse cases to use cases. This will help you to identify the specific use cases that could be abused by an attacker.</li>
+        <li>Re-define the attack vectors. This will help you to identify the most likely attack vectors and prioritize your mitigation efforts.</li>
+    </ol>
+
+    <h1>Write Your Threat Traceability Matrix</h1>
+    <ol>
+        <li>Create a threat traceability matrix that maps threats to assets, threat agents, and mitigation strategies. This matrix will help you to track the progress of your threat modeling efforts and ensure that all of the important threats are being addressed.</li>
+    </ol>
+
+    <h1>Define the Impact and Probability for Each Threat</h1>
+    <ol>
+        <li>Use a risk assessment methodology, such as DREAD or PASTA, to define the impact and probability of each threat. This will help you to prioritize the threats that need to be mitigated first.</li>
+    </ol>
+
+    <h1>Rank Risks</h1>
+    <ol>
+        <li>Rank the risks based on their impact and probability. This will help you to focus your mitigation efforts on the most critical risks.</li>
+    </ol>
+
+    <h1>Determine Countermeasures and Mitigation</h1>
+    <ol>
+        <li>Identify countermeasures and mitigation strategies for each risk. This will help you to reduce the likelihood or impact of each threat.</li>
+        <li>Identify the risk owners for each risk. This will help you to ensure that the right people are responsible for implementing the mitigation.</li>
+    </ol>
 
         </div>
     </div>
