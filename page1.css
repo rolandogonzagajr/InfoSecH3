@@ -9,7 +9,6 @@ body {
     color: #333;
     background-color: #f0f0f0;
     display: flex;
-    min-height: 100vh;
     align-items: center;
     justify-content: flex-start; /* Align content to the left */
     overflow-x: hidden; /* Hide horizontal overflow */
