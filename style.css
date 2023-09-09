@@ -1,56 +1,53 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    margin: 0;
-    padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333; /* Font color for the entire page */
-    background-color: #f0f0f0; /* Background color for the entire page */
+    color: #333;
+    background-color: #f0f0f0;
     display: flex;
-    min-height: 100vh; /* Ensure a minimum height of the viewport */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
     display: flex;
-    flex-direction: row; /* Change flex direction to horizontal */
+    flex-direction: column; /* Change flex direction to vertical */
     align-items: center; /* Center horizontally within the container */
-    justify-content: space-between; /* Add space between h1 and leftnav */
-    height: 100vh; /* Set container height to match viewport height */
-    padding-right: 40px; /* Add padding to the right side of the container */
+    text-align: center; /* Center text in the container */
+    padding: 20px; /* Add padding to the container */
 }
 
 h1 {
     color: #333;
-    font-size: 40px;
-    line-height: 1.2; /* Adjust line height to control the spacing between lines */
+    font-size: 24px; /* Adjust font size for mobile */
+    line-height: 1.2;
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
 }
 
 .leftnav {
-    background-color: #333; /* Background color for the left navigation */
-    width: auto; /* Remove the fixed width to allow it to expand horizontally */
-    min-width: 250px; /* Set a minimum width if needed */
+    background-color: #333;
+    width: 100%; /* Take full width of the container */
     padding: 20px;
-    color: #fff; /* Font color for the links */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribute space evenly, pushing content to the bottom */
-    min-height: 100%; /* Extend leftnav to the bottom of the container */
+    color: #fff;
+    text-align: center; /* Center text in navigation links */
 }
-
-/* Rest of your CSS styles */
-
 
 .leftnav a {
     text-decoration: none;
-    color: inherit; /* Use the inherited font color */
+    color: inherit;
     transition: background-color 0.3s ease, color 0.3s ease;
     padding: 10px;
-    text-align: justify; /* Justify the text in navigation links */
-    flex-grow: 1; /* Allow navigation links to fill available vertical space */
+    display: block; /* Display navigation links as blocks for full width */
 }
 
 .leftnav a:hover {
